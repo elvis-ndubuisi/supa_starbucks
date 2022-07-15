@@ -20,6 +20,7 @@ body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  line-height: 1.4;
   background-color: var(--clr-light);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -50,4 +51,37 @@ img,
 picture {
   max-width: 100%;
   display: block;
+}
+
+/* UTILITY CLASSES */
+.button {
+  background-color: transparent;
+  border: solid transparent 1px;
+  color: var(--clr-dark);
+  display: flex;
+  gap: 1rem;
+  place-content: center;
+  padding: 0.4rem 0.6rem;
+  min-width: 100px;
+  font-size: 0.98rem;
+  border-radius: 1.2rem;
+}
+.button_simple:hover {
+  color: var(--clr-brand);
+}
+.button_outlined {
+  border-color: var(--clr-dark);
+}
+.button_filled {
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  border-color: var(--clr-dark);
+}
+.button_light {
+  border-color: var(--clr-light);
+  color: var(--clr-light);
+}
+.button_dark {
+  border-color: var(--clr-dark);
+  color: var(--clr-dark);
 }

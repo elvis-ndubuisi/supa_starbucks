@@ -1,31 +1,62 @@
 import "./Navbar.css";
 import logo from "../../starbucks-logo.svg";
 import Wrapper from "../Wrapper/Wrapper";
+import { Link, NavLink } from "react-router-dom";
+import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavBar = () => {
   return (
     <nav className="navbar">
       <Wrapper xClass="navbar_container">
         <div>
-          <a href="/">
+          <Link to="/" className="logo">
             <img src={logo} alt="starbucks logo" />
-          </a>
+          </Link>
           <ul>
-            <li className="links">
-              <a href="/">menu</a>
+            <li>
+              <NavLink
+                to="menu"
+                className={({ isActive }) =>
+                  isActive ? "link active" : "links"
+                }
+              >
+                Menu
+              </NavLink>
             </li>
-            <li className="links">
-              <a href="/">reward</a>
+            <li>
+              <NavLink
+                to="reward"
+                className={({ isActive }) =>
+                  isActive ? "link active" : "link"
+                }
+              >
+                reward
+              </NavLink>
             </li>
-            <li className="links">
-              <a href="/">gift card</a>
+            <li>
+              <NavLink
+                to="giftcard"
+                className={({ isActive }) =>
+                  isActive ? "link active" : "link"
+                }
+              >
+                gift card
+              </NavLink>
             </li>
           </ul>
         </div>
         <div>
-          <a href="/findstore">find store</a>
-          <a href="/signin">sign in</a>
-          <a href="/signup">join</a>
+          <Link to="findstore" className="button button_simple">
+            <FontAwesomeIcon icon={faLocationPin} />
+            Find a store
+          </Link>
+          <Link to="signin" className="button button_outlined">
+            Sign in
+          </Link>
+          <Link to="signup" className="button button_filled">
+            Join now
+          </Link>
         </div>
       </Wrapper>
     </nav>

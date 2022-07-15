@@ -4,7 +4,7 @@ const FooterMenu = ({ menuTitle, menulist }) => {
   return (
     <div>
       <p className="menu-title"></p>
-      <ul className="menu"></ul>
+      <div></div>
     </div>
   );
 };

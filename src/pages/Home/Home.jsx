@@ -6,6 +6,7 @@ import refresh from "../../assets/images/home/refresh.jpg";
 import hooray from "../../assets/images/home/hooray.jpg";
 import Wrapper from "../../components/Wrapper/Wrapper";
 import Footer from "../../components/Footer/Footer";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
       <Wrapper>
         <section className="home">
           <ColCard bgColor="#1e3932">
-            <div>
+            <div style={{ backgroundColor: "#dfeae3" }}>
               <img src={summer} alt="summer sale" />
             </div>
             <div>
@@ -22,6 +23,9 @@ const Home = () => {
                 Every Tuesday in July, Starbucks Rewards members can enjoy half
                 off their favorite cold beverage.*
               </p>
+              <Link to="/join" className="button button_outlined button_light">
+                Join now
+              </Link>
             </div>
           </ColCard>
 
@@ -36,6 +40,9 @@ const Home = () => {
                 foam. Or go for a Vanilla Sweet Cream Cold Brew with house-made
                 vanilla-flavored sweet cream.
               </p>
+              <Link to="/" className="button button_outlined button_light">
+                Learn more
+              </Link>
             </div>
           </ColCard>
 
@@ -49,19 +56,25 @@ const Home = () => {
                 Our vibrant Strawberry Açaí Lemonade and Mango Dragonfruit
                 Lemonade Starbucks Refreshers® beverages are oh so chill.
               </p>
+              <Link to="/" className="button button_outlined button_dark">
+                Learn more
+              </Link>
             </div>
           </ColCard>
 
           <ColCard bgColor="#007042">
+            <div>
+              <img src={hooray} alt="Hooray for cookies and cake" />
+            </div>
             <div>
               <h2>Hooray for cookies and cake</h2>
               <p>
                 The new Cookies & Cream Cake Pop is a happy mix of chocolate
                 cake, crumbled cookies and white chocolaty icing.
               </p>
-            </div>
-            <div>
-              <img src={hooray} alt="Hooray for cookies and cake" />
+              <Link to="/" className="button button_outlined button_light">
+                Order now
+              </Link>
             </div>
           </ColCard>
 

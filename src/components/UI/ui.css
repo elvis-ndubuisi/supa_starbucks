@@ -6,14 +6,14 @@
   flex-wrap: wrap;
   color: var(--clr-light);
 }
-.ColCard:nth-child(2) {
+.ColCard:nth-child(2n) {
   flex-direction: row-reverse;
 }
 .ColCard.clrBrand {
   color: var(--clr-dark);
 }
 .ColCard > * {
-  min-height: 250px;
+  /* min-height: 250px; */
   max-height: 450px;
   flex-basis: 50%;
   text-align: center;
@@ -21,6 +21,9 @@
   display: grid;
   place-content: center;
   gap: 1rem;
+}
+.ColCard > *:last-child {
+  padding: 1rem;
 }
 .ColCard > * h2 {
   font-size: 3rem;
