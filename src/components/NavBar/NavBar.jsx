@@ -41,7 +41,7 @@ const NavBar = () => {
                   isActive ? "link active" : "link"
                 }
               >
-                gift card
+                gift cards
               </NavLink>
             </li>
           </ul>

@@ -13,3 +13,33 @@ hr {
   flex-direction: row;
   gap: 3rem;
 }
+
+.footer_foot {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.footer_foot > * {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.3rem;
+  justify-content: left;
+}
+
+.footer_foot a:hover,
+.footer_foot a:focus {
+  text-decoration: underline;
+}
+
+.divider {
+  height: 1.4rem;
+  width: 1px;
+  background-color: var(--clr-dark);
+}
+
+.footer_foot small {
+  opacity: 0.8;
+  color: #007042;
+}
