@@ -1,0 +1,9 @@
+.footer {
+  border-top: solid 2px lightgray;
+}
+
+hr {
+  height: 0;
+  border: 1px solid lightgray;
+  margin: 1rem 0;
+}

@@ -1,0 +1,63 @@
+.ColCard {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  color: var(--clr-light);
+}
+.ColCard:nth-child(2) {
+  flex-direction: row-reverse;
+}
+.ColCard.clrBrand {
+  color: var(--clr-dark);
+}
+.ColCard > * {
+  min-height: 250px;
+  max-height: 450px;
+  flex-basis: 50%;
+  text-align: center;
+  max-height: inherit;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+}
+.ColCard > * h2 {
+  font-size: 3rem;
+  max-width: 600px;
+  margin: 0 auto 1rem;
+}
+.ColCard > * h3 {
+  font-size: 1.6rem;
+  max-width: 600px;
+  margin: auto;
+}
+.ColCard > * img {
+  min-height: inherit;
+  object-fit: cover;
+}
+.ColCard > * p {
+  max-width: 500px;
+  font-size: 1.3rem;
+  margin: auto;
+}
+.ColCard.reverse {
+  flex-direction: row-reverse;
+}
+
+.brand-social-handle {
+  position: relative;
+  height: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  font-size: 1rem;
+}
+.brand-social-handle::before {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  border-radius: inherit;
+  background-color: darkgray;
+}

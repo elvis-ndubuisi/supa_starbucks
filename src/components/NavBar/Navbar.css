@@ -1,0 +1,36 @@
+.navbar {
+  height: 6.3rem;
+  display: block;
+  box-shadow: 0 1px 1px 0 rgb(194, 194, 194);
+  overflow: hidden;
+  color: var(--clr-dark);
+}
+
+.navbar_container {
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar_container > div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+ul,
+li {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+ul .links:focus,
+ul.links:hover {
+  color: var(--clr-brand);
+}
