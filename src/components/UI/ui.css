@@ -24,14 +24,18 @@
 }
 .ColCard > *:last-child {
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 .ColCard > * h2 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   max-width: 600px;
   margin: 0 auto 1rem;
 }
 .ColCard > * h3 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   max-width: 600px;
   margin: auto;
 }
@@ -40,9 +44,8 @@
   object-fit: cover;
 }
 .ColCard > * p {
-  max-width: 500px;
-  font-size: 1.3rem;
-  margin: auto;
+  max-width: 560px;
+  font-size: 1.25rem;
 }
 .ColCard.reverse {
   flex-direction: row-reverse;
@@ -63,4 +66,29 @@
   width: inherit;
   border-radius: inherit;
   background-color: darkgray;
+}
+
+/* FooterMenu */
+.menu-title {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  margin-bottom: 1.5rem;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  max-width: 200px;
+}
+
+.menu-list > * {
+  opacity: 0.6;
+}
+
+.menu-list > *:hover,
+.menu-list > *:focus {
+  opacity: 1;
 }

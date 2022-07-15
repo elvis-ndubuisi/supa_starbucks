@@ -7,3 +7,9 @@ hr {
   border: 1px solid lightgray;
   margin: 1rem 0;
 }
+
+.footer_menuList {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}

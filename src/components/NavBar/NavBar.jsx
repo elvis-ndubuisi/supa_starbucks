@@ -2,7 +2,7 @@ import "./Navbar.css";
 import logo from "../../starbucks-logo.svg";
 import Wrapper from "../Wrapper/Wrapper";
 import { Link, NavLink } from "react-router-dom";
-import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
+import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const NavBar = () => {
@@ -48,7 +48,7 @@ const NavBar = () => {
         </div>
         <div>
           <Link to="findstore" className="button button_simple">
-            <FontAwesomeIcon icon={faLocationPin} />
+            <FontAwesomeIcon icon={faLocationDot} size="lg" />
             Find a store
           </Link>
           <Link to="signin" className="button button_outlined">
