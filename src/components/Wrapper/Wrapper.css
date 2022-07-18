@@ -1,5 +1,6 @@
 .wrapper {
-  max-width: calc(11rem + var(--max-width));
+  width: 100%;
+  max-width: calc(12rem + var(--max-width));
   margin-inline: auto;
   padding: 1rem;
 }

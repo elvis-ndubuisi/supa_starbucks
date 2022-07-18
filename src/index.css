@@ -5,6 +5,12 @@
   --clr-brand: #01713e;
   --clr-dark: #242021;
   --clr-light: #ffffff;
+  --nav-height: 6.3rem;
+}
+@media screen and (max-width: 768px) {
+  :root {
+    --nav-height: 5rem;
+  }
 }
 
 *,

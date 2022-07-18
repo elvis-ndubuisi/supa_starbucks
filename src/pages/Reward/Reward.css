@@ -1,8 +1,17 @@
+.reward {
+  position: relative;
+  min-height: 100vh;
+  position: relative;
+  margin-top: var(--nav-height);
+}
+
 .starbuck {
+  position: fixed;
+  top: var(--nav-height);
+  left: 0;
+  width: 100%;
   background-color: var(--clr-brand);
   color: white;
-  width: 100%;
-  padding: 0.8rem;
 }
 
 .starbuck p {
@@ -10,13 +19,40 @@
   font-size: 0.9rem;
 }
 
-.reward {
-  min-height: 100vh;
-  position: relative;
+.main {
 }
 
-.reward_page {
-  top: 0;
-  left: 0;
-  width: 100%;
+.main .landing {
+  background-color: rgb(212, 233, 226);
+  min-height: calc(100vh - var(--nav-height));
+  background-image: url("../../assets/images/reward/xl-hero-desktop_2021.webp");
+  background-position: 50%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+}
+
+.landing h2 {
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.landing p {
+  margin: 2rem 0;
+  font-size: 1.1rem;
+}
+
+.landing .join {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 1rem;
+}
+
+.join a:last-child {
+  text-decoration: underline;
 }

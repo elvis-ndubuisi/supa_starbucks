@@ -1,20 +1,15 @@
-:root {
-  --nav-height: 6.3rem;
-}
-@media screen and (max-width: 768px) {
-  :root {
-    --nav-height: 5rem;
-  }
-}
-
 .navbar {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   z-index: 1;
   height: var(--nav-height);
   display: block;
   box-shadow: 0 1px 1px 0 rgb(194, 194, 194);
   overflow: hidden;
   color: var(--clr-dark);
+  background-color: var(--clr-light);
 }
 
 .navbar_container {

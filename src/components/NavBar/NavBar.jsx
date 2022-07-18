@@ -18,6 +18,7 @@ const NavBar = () => {
   const toggleClick = () => {
     setToggleActive(!toggleActive);
   };
+
   return (
     <nav className="navbar">
       <Wrapper xClass="navbar_container">

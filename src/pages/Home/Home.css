@@ -4,6 +4,7 @@
   align-items: center;
   max-width: var(--max-width);
   margin-inline: auto;
+  margin-top: var(--nav-height);
 }
 
 .home > * {
