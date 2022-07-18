@@ -1,0 +1,22 @@
+.starbuck {
+  background-color: var(--clr-brand);
+  color: white;
+  width: 100%;
+  padding: 0.8rem;
+}
+
+.starbuck p {
+  padding-inline: 4rem;
+  font-size: 0.9rem;
+}
+
+.reward {
+  min-height: 100vh;
+  position: relative;
+}
+
+.reward_page {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
