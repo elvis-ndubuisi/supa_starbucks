@@ -88,3 +88,9 @@ picture {
   border-color: var(--clr-dark);
   color: var(--clr-dark);
 }
+
+@media screen and (max-width: 768px) {
+  .not-mobile {
+    display: none !important;
+  }
+}

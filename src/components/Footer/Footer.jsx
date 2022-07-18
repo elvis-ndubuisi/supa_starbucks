@@ -43,13 +43,13 @@ const Footer = () => {
             <BrandHandle icon={faTwitter} />
           </div>
           <div>
-            <a href="">Privacy Policy</a>
+            <a href="/">Privacy Policy</a>
             <span className="divider"></span>
-            <a href="">Terms of Use</a>
+            <a href="/">Terms of Use</a>
             <span className="divider"></span>
-            <a href="">CA Supply Chain Act</a>
+            <a href="/">CA Supply Chain Act</a>
             <span className="divider"></span>
-            <a href="">Cookie Preferences</a>
+            <a href="/">Cookie Preferences</a>
           </div>
           <small>© 2022 Starbucks Coffee Company. All rights reserved.</small>
         </section>

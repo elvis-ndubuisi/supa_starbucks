@@ -1,11 +1,23 @@
 import "./Navbar.css";
 import logo from "../../starbucks-logo.svg";
 import Wrapper from "../Wrapper/Wrapper";
+import Toggle from "../UI/Toggle";
+import MobileNav from "./MobileNav";
 import { Link, NavLink } from "react-router-dom";
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLocationDot,
+  faBars,
+  faTimes,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 
 const NavBar = () => {
+  const [toggleActive, setToggleActive] = useState(false);
+
+  const toggleClick = () => {
+    setToggleActive(!toggleActive);
+  };
   return (
     <nav className="navbar">
       <Wrapper xClass="navbar_container">
@@ -13,7 +25,7 @@ const NavBar = () => {
           <Link to="/" className="logo">
             <img src={logo} alt="starbucks logo" />
           </Link>
-          <ul>
+          <ul className="not-mobile">
             <li>
               <NavLink
                 to="menu"
@@ -46,7 +58,7 @@ const NavBar = () => {
             </li>
           </ul>
         </div>
-        <div>
+        <div className="not-mobile">
           <Link to="findstore" className="button button_simple">
             <FontAwesomeIcon icon={faLocationDot} size="lg" />
             Find a store
@@ -58,7 +70,13 @@ const NavBar = () => {
             Join now
           </Link>
         </div>
+        <Toggle
+          currentState={toggleActive}
+          component={{ initial: faBars, next: faTimes }}
+          onClick={toggleClick}
+        />
       </Wrapper>
+      <MobileNav currentState={toggleActive} />
     </nav>
   );
 };

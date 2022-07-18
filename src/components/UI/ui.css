@@ -3,12 +3,20 @@
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  flex-wrap: wrap;
   color: var(--clr-light);
 }
 .ColCard:nth-child(2n) {
   flex-direction: row-reverse;
 }
+@media screen and (max-width: 600px) {
+  .ColCard {
+    flex-direction: column;
+  }
+  .ColCard:nth-child(2n) {
+    flex-direction: column;
+  }
+}
+
 .ColCard.clrBrand {
   color: var(--clr-dark);
 }
@@ -29,6 +37,15 @@
   align-items: center;
   gap: 2rem;
 }
+@media screen and (max-width: 600px) {
+  .ColCard > *:first-child {
+    max-height: 300px;
+  }
+  .ColCard > *:last-child {
+    gap: 1rem;
+  }
+}
+
 .ColCard > * h2 {
   font-size: 3.2rem;
   max-width: 600px;
@@ -39,14 +56,33 @@
   max-width: 600px;
   margin: auto;
 }
+@media screen and (max-width: 768px) {
+  .ColCard > * h2 {
+    font-size: 2rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .ColCard > * h3 {
+    width: 100%;
+  }
+}
+
 .ColCard > * img {
   min-height: inherit;
   object-fit: cover;
 }
+
 .ColCard > * p {
   max-width: 560px;
   font-size: 1.25rem;
 }
+@media screen and (max-width: 600px) {
+  .ColCard > * p {
+    font-size: 1.2rem;
+  }
+}
+
 .ColCard.reverse {
   flex-direction: row-reverse;
 }
@@ -83,10 +119,27 @@
 }
 
 /* FooterMenu */
+.menu-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.menu-bar > *:last-child {
+  display: none;
+}
 .menu-title {
   font-size: 1.3rem;
   text-transform: capitalize;
-  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .menu-bar > *:last-child {
+    display: block;
+  }
+  .menu-title {
+    font-size: 1.1rem;
+  }
 }
 
 .menu-list {
@@ -97,6 +150,14 @@
   margin: 1rem 0;
   max-width: 200px;
 }
+@media screen and (max-width: 768px) {
+  .menu-list {
+    display: none;
+  }
+  .menu-list.active {
+    display: flex;
+  }
+}
 
 .menu-list > * {
   opacity: 0.6;
@@ -105,4 +166,13 @@
 .menu-list > *:hover,
 .menu-list > *:focus {
   opacity: 1;
+}
+
+/* Toggle */
+.toggle {
+  display: inline-flex;
+  place-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  font-size: 1.5rem;
 }
