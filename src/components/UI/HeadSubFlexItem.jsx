@@ -1,7 +1,7 @@
 import React from "react";
 
-const HeadSubFlex_Item = ({ children }) => {
+const HeadSubFlexItem = ({ children }) => {
   return <div className="head-sub-flex-item">{children}</div>;
 };
 
-export default HeadSubFlex_Item;
+export default HeadSubFlexItem;

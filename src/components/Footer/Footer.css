@@ -3,7 +3,7 @@
   font-size: 0.9rem;
 }
 
-hr {
+.footer hr {
   height: 0;
   border: 1px solid lightgray;
   margin: 2rem 0;
