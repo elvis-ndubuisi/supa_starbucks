@@ -31,7 +31,7 @@ const NavBar = () => {
               <NavLink
                 to="menu"
                 className={({ isActive }) =>
-                  isActive ? "link active" : "links"
+                  isActive ? "link active" : "link"
                 }
               >
                 Menu
@@ -44,7 +44,7 @@ const NavBar = () => {
                   isActive ? "link active" : "link"
                 }
               >
-                reward
+                rewards
               </NavLink>
             </li>
             <li>

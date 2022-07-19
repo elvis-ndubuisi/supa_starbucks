@@ -6,7 +6,7 @@
   position: relative;
   min-height: 100vh;
   position: relative;
-  margin-top: calc(var(--nav-height) + 5rem);
+  margin-top: calc(var(--nav-height) + 3rem);
   display: grid;
   grid-template-columns: min-content 1fr;
   justify-content: start;

@@ -49,6 +49,7 @@ const Reward = () => {
               </div>
             </Wrapper>
           </div>
+
           <HeadSubFlex>
             <h2>Getting started is easy</h2>
             <p>Earn Stars and get rewarded in a few easy steps.</p>

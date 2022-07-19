@@ -1,26 +1,32 @@
+:root {
+  --max-landng-height: 810px;
+}
+
 .reward {
   position: relative;
   min-height: 100vh;
   position: relative;
-  margin-top: var(--nav-height);
+  margin-top: calc(var(--nav-height) + 3rem);
 }
 
-.starbuck {
+.reward .starbuck {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--clr-brand);
   color: white;
 }
 
-.starbuck p {
+.reward .starbuck p {
   padding-inline: 4rem;
   font-size: 0.9rem;
 }
 
-.main {
-}
-
 .main .landing {
   background-color: rgb(212, 233, 226);
-  min-height: calc(100vh - var(--nav-height));
+  height: calc(100vh - var(--nav-height));
+  max-height: var(--max-landng-height);
   background-image: url("../../assets/images/reward/xl-hero-desktop_2021.webp");
   background-position: 50%;
   background-size: auto 100%;
@@ -53,6 +59,20 @@
   gap: 1rem;
 }
 
+@media (max-width: 1024px) {
+  .main .landing {
+    max-height: 600px;
+  }
+  .landing h2 {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 768px) {
+  .main .landing {
+    max-height: 430px;
+  }
+}
+
 .join a:last-child {
   text-decoration: underline;
 }
@@ -74,13 +94,13 @@
   gap: 2rem;
 }
 
-.content hr {
+.cash-card-stars .content hr {
   height: 1px;
   width: 100%;
   margin: 0;
 }
 
-.cashcard {
+.cash-card-stars .content .cashcard {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -88,12 +108,30 @@
   padding-inline: 4rem;
   gap: 3rem;
 }
+@media (max-width: 1024px) {
+  .cash-card-stars .content .cashcard {
+    padding-inline: unset;
+  }
+}
+@media (max-width: 768px) {
+  .cash-card-stars .content .cashcard {
+    flex-wrap: wrap;
+  }
+}
 
 .cashcard > * {
   min-width: 200px;
   text-align: left;
 }
 
+@media (max-width: 768px) {
+  .cashcard > *:first-child {
+    flex-basis: 100%;
+  }
+  .cashcard > * {
+    flex: 1;
+  }
+}
 .cashcard .title {
   font-size: 1.3rem;
   font-weight: 600;
@@ -161,10 +199,15 @@ small {
 }
 
 .term-of-use .container > div {
-  flex-basis: 49%;
+  flex-basis: 47%;
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+}
+@media (max-width: 1024px) {
+  .term-of-use .container > div {
+    max-width: 430px;
+  }
 }
 
 .term-of-use a {
