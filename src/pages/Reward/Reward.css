@@ -6,10 +6,6 @@
 }
 
 .starbuck {
-  position: fixed;
-  top: var(--nav-height);
-  left: 0;
-  width: 100%;
   background-color: var(--clr-brand);
   color: white;
 }

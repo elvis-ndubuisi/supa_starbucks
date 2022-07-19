@@ -14,6 +14,7 @@ import Footer from "../../components/Footer/Footer";
 import { Fragment } from "react";
 import CashCard from "./CashCard";
 import CardCardItem from "./CardCardItem";
+import SubNav from "../../components/UI/SubNav";
 import a1 from "../../assets/images/reward/cashcard/1A.png";
 import a2 from "../../assets/images/reward/cashcard/1B.webp";
 import b1 from "../../assets/images/reward/cashcard/2A.webp";
@@ -23,11 +24,9 @@ const Reward = () => {
   return (
     <Fragment>
       <section className="reward">
-        <div className="starbuck">
-          <Wrapper>
-            <p>STARBUCKS® REWARDS</p>
-          </Wrapper>
-        </div>
+        <SubNav xClass="starbuck">
+          <p>STARBUCKS® REWARDS</p>
+        </SubNav>
         <main className="main">
           <div className="landing">
             <Wrapper>
