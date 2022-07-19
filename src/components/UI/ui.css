@@ -1,0 +1,248 @@
+.ColCard {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  color: var(--clr-light);
+}
+.ColCard:nth-child(2n) {
+  flex-direction: row-reverse;
+}
+@media screen and (max-width: 600px) {
+  .ColCard {
+    flex-direction: column;
+  }
+  .ColCard:nth-child(2n) {
+    flex-direction: column;
+  }
+}
+
+.ColCard.clrBrand {
+  color: var(--clr-dark);
+}
+.ColCard > * {
+  /* min-height: 250px; */
+  max-height: 450px;
+  flex-basis: 50%;
+  text-align: center;
+  max-height: inherit;
+  display: grid;
+  place-content: center;
+  gap: 1rem;
+}
+.ColCard > *:last-child {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .ColCard > *:first-child {
+    max-height: 300px;
+  }
+  .ColCard > *:last-child {
+    gap: 1rem;
+  }
+}
+
+.ColCard > * h2 {
+  font-size: 3.2rem;
+  max-width: 600px;
+  margin: 0 auto 1rem;
+}
+.ColCard > * h3 {
+  font-size: 1.5rem;
+  max-width: 600px;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .ColCard > * h2 {
+    font-size: 2rem;
+    width: 100%;
+    margin: 0;
+  }
+
+  .ColCard > * h3 {
+    width: 100%;
+  }
+}
+
+.ColCard > * img {
+  min-height: inherit;
+  object-fit: cover;
+}
+
+.ColCard > * p {
+  max-width: 560px;
+  font-size: 1.25rem;
+}
+@media screen and (max-width: 600px) {
+  .ColCard > * p {
+    font-size: 1.2rem;
+  }
+}
+
+.ColCard.reverse {
+  flex-direction: row-reverse;
+}
+
+/* BrandHandle */
+.brand-social-handle {
+  position: relative;
+  height: 35px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  display: grid;
+  place-content: center;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.brand-social-handle::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: inherit;
+  z-index: -1;
+  aspect-ratio: 1;
+  border-radius: inherit;
+  background-color: lightgray;
+  transition: height 0.2s ease-in-out;
+}
+
+.brand-social-handle:hover::before {
+  height: 50px;
+}
+
+/* FooterMenu */
+.menu-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+.menu-bar > *:last-child {
+  display: none;
+}
+.menu-title {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 768px) {
+  .menu-bar > *:last-child {
+    display: block;
+  }
+  .menu-title {
+    font-size: 1.1rem;
+  }
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 1.5rem;
+  margin: 1rem 0;
+  max-width: 200px;
+}
+@media screen and (max-width: 768px) {
+  .menu-list {
+    display: none;
+  }
+  .menu-list.active {
+    display: flex;
+  }
+}
+
+.menu-list > * {
+  opacity: 0.6;
+}
+
+.menu-list > *:hover,
+.menu-list > *:focus {
+  opacity: 1;
+}
+
+/* Toggle */
+.toggle {
+  display: inline-flex;
+  place-content: center;
+  min-height: 40px;
+  min-width: 40px;
+  font-size: 1.5rem;
+}
+
+/* Head subheader flexContent */
+.head-sub-flex {
+  display: block;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.head-sub-flex .children {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.children h2 {
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.children > p {
+  max-width: 800px;
+}
+
+.children > section {
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Head subheader flexContent Item */
+.head-sub-flex-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  gap: 1rem;
+  max-width: 400px;
+}
+
+.head-sub-flex-item img {
+  height: 3rem;
+  object-fit: contain;
+}
+.head-sub-flex-item img.lg {
+  height: 6.5rem;
+}
+
+.head-sub-flex-item h3 {
+  /* font-weight: normal; */
+  font-size: 1.2rem;
+}
+
+.head-sub-flex-item p {
+}
+
+.head-sub-flex-item a {
+  color: var(--clr-brand);
+  text-decoration: underline;
+}
+
+.head-sub-flex-item a:hover,
+.head-sub-flex-item a:focus {
+  text-decoration: none;
+}
