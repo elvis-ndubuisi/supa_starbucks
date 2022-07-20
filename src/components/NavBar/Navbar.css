@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 6;
   height: var(--nav-height);
   display: block;
   box-shadow: 0 1px 1px 0 rgb(194, 194, 194);

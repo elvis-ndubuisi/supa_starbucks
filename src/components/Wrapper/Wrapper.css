@@ -10,3 +10,9 @@
     padding-inline: 2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .wrapper {
+    padding-inline: 0.5rem;
+  }
+}
