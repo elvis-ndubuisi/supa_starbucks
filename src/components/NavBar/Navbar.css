@@ -69,6 +69,10 @@ li {
   place-items: center;
 }
 
+.link.flex {
+  display: flex;
+}
+
 .link.active::after {
   content: "";
   position: absolute;

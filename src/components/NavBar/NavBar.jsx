@@ -60,10 +60,21 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="not-mobile">
-          <Link to="findstore" className="button button_simple">
+          <NavLink
+            to="findstore"
+            className={({ isActive }) =>
+              isActive
+                ? "link flex button button_simple active"
+                : "link flex button button_simple"
+            }
+          >
+            <FontAwesomeIcon icon={faLocationDot} size="lg" />
+            <span>Find a store</span>
+          </NavLink>
+          {/* <Link to="findstore" className="button button_simple">
             <FontAwesomeIcon icon={faLocationDot} size="lg" />
             Find a store
-          </Link>
+          </Link> */}
           <Link to="signin" className="button button_outlined">
             Sign in
           </Link>
