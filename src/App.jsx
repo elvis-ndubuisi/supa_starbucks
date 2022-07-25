@@ -6,7 +6,8 @@ import NotFound from "./pages/NotFound/NotFound";
 import Reward from "./pages/Reward/Reward";
 import Menu from "./pages/Menu/Menu";
 import FindStore from "./pages/FindStore/FindStore";
-import Signin from "./pages/Sigin/Signin";
+import Signin from "./pages/SiginIn/Signin";
+import Join from "./pages/Join/Join";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="giftcard" element={<div>giftcard</div>} />
           <Route path="findstore" element={<FindStore />} />
           <Route path="/signin" element={<Signin />} />
+          <Route path="/join" element={<Join />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

@@ -4,6 +4,7 @@ import coldbrew from "../../assets/images/home/cold-brew.jpg";
 import summer from "../../assets/images/home/summer.webp";
 import refresh from "../../assets/images/home/refresh.jpg";
 import hooray from "../../assets/images/home/hooray.jpg";
+import disability from "../../assets/images/home/137-79094.webp";
 import Wrapper from "../../components/Wrapper/Wrapper";
 import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
@@ -74,6 +75,23 @@ const Home = () => {
               </p>
               <Link to="/" className="button button_outlined button_light">
                 Order now
+              </Link>
+            </div>
+          </ColCard>
+
+          <ColCard bgColor="#d3e9e2">
+            <div>
+              <img src={disability} alt="celebrating disability pride month" />
+            </div>
+            <div>
+              <h2>Celebrating Disability Pride Month</h2>
+              <p>
+                Alongside the Disability Advocacy Partner Network, we’re
+                building more inclusive communities through awareness, action
+                and allyship.
+              </p>
+              <Link to="/" className="button button_outlined button_light">
+                Get involved
               </Link>
             </div>
           </ColCard>
