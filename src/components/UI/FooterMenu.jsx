@@ -18,14 +18,17 @@ const FooterMenu = ({ menuTitle, menulist }) => {
 
   return (
     <div>
-      <div className="menu-bar" onClick={() => setToggleActive(!toggleActive)}>
-        <p className="menu-title">{menuTitle}</p>
+      <div
+        className="footer-menu-bar"
+        onClick={() => setToggleActive(!toggleActive)}
+      >
+        <p className="footer-menu-title">{menuTitle}</p>
         <Toggle
           currentState={toggleActive}
           component={{ initial: faChevronDown, next: faChevronUp }}
         />
       </div>
-      <div className={`menu-list ${active}`}>{Menu}</div>
+      <div className={`footer-menu-list ${active}`}>{Menu}</div>
     </div>
   );
 };

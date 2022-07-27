@@ -1,0 +1,41 @@
+.findstore {
+  position: relative;
+  min-height: 100vh;
+  position: relative;
+  margin-top: var(--nav-height);
+  display: grid;
+  grid-template-columns: minmax(400px, 750px) 1fr;
+}
+
+.findstore .finder {
+  /* max-width: 750px; */
+  padding-block: 2rem;
+}
+
+.findstore .finder > * {
+  width: 100%;
+}
+
+.search-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 2rem;
+}
+
+.search-result {
+}
+
+.store-result {
+  width: 100%;
+  background-color: rgb(233, 233, 233);
+  display: flex;
+  padding: 0 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.map {
+  background-color: rgb(233, 233, 233);
+  position: relative;
+}

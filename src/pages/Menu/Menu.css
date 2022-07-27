@@ -1,0 +1,27 @@
+.menu-nav {
+  background-color: rgb(247, 247, 247);
+  border-bottom: solid 1px lightgray;
+}
+.menu-section {
+  position: relative;
+  min-height: 100vh;
+  position: relative;
+  margin-top: calc(var(--nav-height) + 3rem);
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  justify-content: start;
+  gap: 2rem;
+}
+
+.menu-section .menu-list {
+  min-width: 200px;
+  border: solid 3px red;
+}
+
+.menu-section .menu-list > div {
+  display: flex;
+}
+
+.menu-section .menu {
+  border: solid 3px green;
+}

@@ -1,5 +1,4 @@
 import "./Tab.css";
-import Wrapper from "../Wrapper/Wrapper";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import rewardTabContents from "../../data/rewardTabContents";

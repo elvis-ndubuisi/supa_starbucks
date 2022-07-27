@@ -51,7 +51,7 @@ const MobileNav = ({ currentState }) => {
               <Link to="signin" className="button button_outlined">
                 Sign in
               </Link>
-              <Link to="signup" className="button button_filled">
+              <Link to="join" className="button button_filled">
                 Join now
               </Link>
             </div>

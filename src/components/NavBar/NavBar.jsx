@@ -31,7 +31,7 @@ const NavBar = () => {
               <NavLink
                 to="menu"
                 className={({ isActive }) =>
-                  isActive ? "link active" : "links"
+                  isActive ? "link active" : "link"
                 }
               >
                 Menu
@@ -44,7 +44,7 @@ const NavBar = () => {
                   isActive ? "link active" : "link"
                 }
               >
-                reward
+                rewards
               </NavLink>
             </li>
             <li>
@@ -60,14 +60,25 @@ const NavBar = () => {
           </ul>
         </div>
         <div className="not-mobile">
-          <Link to="findstore" className="button button_simple">
+          <NavLink
+            to="findstore"
+            className={({ isActive }) =>
+              isActive
+                ? "link flex button button_simple active"
+                : "link flex button button_simple"
+            }
+          >
+            <FontAwesomeIcon icon={faLocationDot} size="lg" />
+            <span>Find a store</span>
+          </NavLink>
+          {/* <Link to="findstore" className="button button_simple">
             <FontAwesomeIcon icon={faLocationDot} size="lg" />
             Find a store
-          </Link>
-          <Link to="signin" className="button button_outlined">
+          </Link> */}
+          <Link to="signin2" className="button button_outlined">
             Sign in
           </Link>
-          <Link to="signup" className="button button_filled">
+          <Link to="join2" className="button button_filled">
             Join now
           </Link>
         </div>

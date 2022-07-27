@@ -119,30 +119,30 @@
 }
 
 /* FooterMenu */
-.menu-bar {
+.footer-menu-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 1.5rem;
 }
-.menu-bar > *:last-child {
+.footer-menu-bar > *:last-child {
   display: none;
 }
-.menu-title {
+.footer-menu-title {
   font-size: 1.3rem;
   text-transform: capitalize;
 }
 @media screen and (max-width: 768px) {
-  .menu-bar > *:last-child {
+  .footer-menu-bar > *:last-child {
     display: block;
   }
-  .menu-title {
+  .footer-menu-title {
     font-size: 1.1rem;
   }
 }
 
-.menu-list {
+.footer-menu-list {
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -151,20 +151,20 @@
   max-width: 200px;
 }
 @media screen and (max-width: 768px) {
-  .menu-list {
+  .footer-menu-list {
     display: none;
   }
-  .menu-list.active {
+  .footer-menu-list.active {
     display: flex;
   }
 }
 
-.menu-list > * {
+.footer-menu-list > * {
   opacity: 0.6;
 }
 
-.menu-list > *:hover,
-.menu-list > *:focus {
+.footer-menu-list > *:hover,
+.footer-menu-list > *:focus {
   opacity: 1;
 }
 
@@ -205,20 +205,45 @@
   padding-top: 1.5rem;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   gap: 2rem;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .children > section {
+    flex-wrap: wrap;
+  }
+}
 
 /* Head subheader flexContent Item */
-.head-sub-flex-item {
+.head-sub-flex-item,
+.head-sub-flex-item > div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: baseline;
   gap: 1rem;
   max-width: 400px;
+}
+@media (max-width: 1024px) {
+  .head-sub-flex-item {
+    max-width: 300px;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .head-sub-flex-item {
+    max-width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .head-sub-flex-item h3,
+  .head-sub-flex-item a {
+    align-self: start;
+  }
 }
 
 .head-sub-flex-item img {
@@ -234,9 +259,6 @@
   font-size: 1.2rem;
 }
 
-.head-sub-flex-item p {
-}
-
 .head-sub-flex-item a {
   color: var(--clr-brand);
   text-decoration: underline;
@@ -245,4 +267,13 @@
 .head-sub-flex-item a:hover,
 .head-sub-flex-item a:focus {
   text-decoration: none;
+}
+
+/* SubNav */
+.sub-nav {
+  position: fixed;
+  top: var(--nav-height);
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }

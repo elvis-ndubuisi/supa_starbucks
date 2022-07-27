@@ -14,6 +14,7 @@ import Footer from "../../components/Footer/Footer";
 import { Fragment } from "react";
 import CashCard from "./CashCard";
 import CardCardItem from "./CardCardItem";
+import SubNav from "../../components/UI/SubNav";
 import a1 from "../../assets/images/reward/cashcard/1A.png";
 import a2 from "../../assets/images/reward/cashcard/1B.webp";
 import b1 from "../../assets/images/reward/cashcard/2A.webp";
@@ -23,11 +24,9 @@ const Reward = () => {
   return (
     <Fragment>
       <section className="reward">
-        <div className="starbuck">
-          <Wrapper>
-            <p>STARBUCKS® REWARDS</p>
-          </Wrapper>
-        </div>
+        <SubNav xClass="starbuck">
+          <p>STARBUCKS® REWARDS</p>
+        </SubNav>
         <main className="main">
           <div className="landing">
             <Wrapper>
@@ -50,6 +49,7 @@ const Reward = () => {
               </div>
             </Wrapper>
           </div>
+
           <HeadSubFlex>
             <h2>Getting started is easy</h2>
             <p>Earn Stars and get rewarded in a few easy steps.</p>
@@ -57,30 +57,37 @@ const Reward = () => {
             <section>
               <HeadSubFlexItem>
                 <img src={gettingStarted} alt="create an account" />
-                <h3>Create an account</h3>
-                <p>
-                  To get started, <Link to="/join">join now</Link>. You can also
-                  <a href="/"> join in the app</a> to get access to the full
-                  range of Starbucks® Rewards benefits.
-                </p>
+                <div>
+                  <h3>Create an account</h3>
+                  <p>
+                    To get started, <Link to="/join">join now</Link>. You can
+                    also
+                    <a href="/"> join in the app</a> to get access to the full
+                    range of Starbucks® Rewards benefits.
+                  </p>
+                </div>
               </HeadSubFlexItem>
               <HeadSubFlexItem>
                 <img src={gettingStarted2} alt="order and pay how you'd like" />
-                <h3>Order and pay how you’d like</h3>
-                <p>
-                  Use cash, credit/debit card or save some time and pay right
-                  through the app. You’ll collect Stars all ways.
-                  <a href="/"> Learn how</a>
-                </p>
+                <div>
+                  <h3>Order and pay how you’d like</h3>
+                  <p>
+                    Use cash, credit/debit card or save some time and pay right
+                    through the app. You’ll collect Stars all ways.
+                    <a href="/"> Learn how</a>
+                  </p>
+                </div>
               </HeadSubFlexItem>
               <HeadSubFlexItem>
                 <img src={gettingStarted3} alt="earn starts, get reward" />
-                <h3>Earn Stars, get Rewards</h3>
-                <p>
-                  As you earn Stars, you can redeem them for Rewards—like free
-                  food, drinks, and more. Start redeeming with as little as 25
-                  Stars!
-                </p>
+                <div>
+                  <h3>Earn Stars, get Rewards</h3>
+                  <p>
+                    As you earn Stars, you can redeem them for Rewards—like free
+                    food, drinks, and more. Start redeeming with as little as 25
+                    Stars!
+                  </p>
+                </div>
               </HeadSubFlexItem>
             </section>
           </HeadSubFlex>
@@ -97,30 +104,36 @@ const Reward = () => {
             <section>
               <HeadSubFlexItem>
                 <img src={funFrebies} alt="Fun freebies" className="lg" />
-                <h3>Fun freebies</h3>
-                <p>
-                  Not only can you earn free coffee, look forward to a birthday
-                  treat plus coffee and tea refills.
-                </p>
-                <a href="/">Learn more</a>
+                <div>
+                  <h3>Fun freebies</h3>
+                  <p>
+                    Not only can you earn free coffee, look forward to a
+                    birthday treat plus coffee and tea refills.
+                  </p>
+                  <a href="/">Learn more</a>
+                </div>
               </HeadSubFlexItem>
               <HeadSubFlexItem>
                 <img src={orderAndPay} alt="Order & pay ahead" className="lg" />
-                <h3>Order & pay ahead</h3>
-                <p>
-                  Enjoy the convenience of in-store, curbside or drive-thru
-                  pickup at select stores.
-                </p>
-                <a href="/">Learn more</a>
+                <div>
+                  <h3>Order & pay ahead</h3>
+                  <p>
+                    Enjoy the convenience of in-store, curbside or drive-thru
+                    pickup at select stores.
+                  </p>
+                  <a href="/">Learn more</a>
+                </div>
               </HeadSubFlexItem>
               <HeadSubFlexItem>
                 <img src={getToFree} alt="Get to free faster" className="lg" />
-                <h3>Get to free faster</h3>
-                <p>
-                  Earn Stars even quicker with Bonus Star challenges, Double
-                  Star Days and exciting games.
-                </p>
-                <a href="/">Learn more</a>
+                <div>
+                  <h3>Get to free faster</h3>
+                  <p>
+                    Earn Stars even quicker with Bonus Star challenges, Double
+                    Star Days and exciting games.
+                  </p>
+                  <a href="/">Learn more</a>
+                </div>
               </HeadSubFlexItem>
             </section>
           </HeadSubFlex>

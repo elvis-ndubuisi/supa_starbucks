@@ -3,7 +3,9 @@ import ColCard from "../../components/UI/ColCard";
 import coldbrew from "../../assets/images/home/cold-brew.jpg";
 import summer from "../../assets/images/home/summer.webp";
 import refresh from "../../assets/images/home/refresh.jpg";
+import reward from "../../assets/images/home/reward.jpg";
 import hooray from "../../assets/images/home/hooray.jpg";
+import disability from "../../assets/images/home/137-79094.webp";
 import Wrapper from "../../components/Wrapper/Wrapper";
 import Footer from "../../components/Footer/Footer";
 import { Link } from "react-router-dom";
@@ -14,6 +16,21 @@ const Home = () => {
       <Wrapper>
         <section className="home">
           <ColCard bgColor="#1e3932">
+            <div style={{ backgroundColor: "#dfeae3" }}>
+              <img src={reward} alt="summer sale" />
+            </div>
+            <div>
+              <h3>Summer is brighter with free treats.*</h3>
+              {/* <p>
+                Every Tuesday in July, Starbucks Rewards members can enjoy half
+                off their favorite cold beverage.*
+              </p> */}
+              <Link to="/join" className="button button_outlined button_light">
+                Join Starbucks Rewards
+              </Link>
+            </div>
+          </ColCard>
+          {/* <ColCard bgColor="#1e3932">
             <div style={{ backgroundColor: "#dfeae3" }}>
               <img src={summer} alt="summer sale" />
             </div>
@@ -27,7 +44,7 @@ const Home = () => {
                 Join now
               </Link>
             </div>
-          </ColCard>
+          </ColCard> */}
 
           <ColCard bgColor="#f06464">
             <div>
@@ -74,6 +91,25 @@ const Home = () => {
               </p>
               <Link to="/" className="button button_outlined button_light">
                 Order now
+              </Link>
+            </div>
+          </ColCard>
+
+          <ColCard bgColor="#d3e9e2">
+            <div>
+              <img src={disability} alt="celebrating disability pride month" />
+            </div>
+            <div style={{ color: "black" }}>
+              <h2 style={{ fontSize: "2rem" }}>
+                Celebrating Disability Pride Month
+              </h2>
+              <p>
+                Alongside the Disability Advocacy Partner Network, we’re
+                building more inclusive communities through awareness, action
+                and allyship.
+              </p>
+              <Link to="/" className="button button_outlined button_light">
+                Get involved
               </Link>
             </div>
           </ColCard>
