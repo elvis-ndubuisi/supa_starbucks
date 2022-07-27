@@ -75,10 +75,10 @@ const NavBar = () => {
             <FontAwesomeIcon icon={faLocationDot} size="lg" />
             Find a store
           </Link> */}
-          <Link to="signin" className="button button_outlined">
+          <Link to="signin2" className="button button_outlined">
             Sign in
           </Link>
-          <Link to="join" className="button button_filled">
+          <Link to="join2" className="button button_filled">
             Join now
           </Link>
         </div>

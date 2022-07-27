@@ -1,0 +1,51 @@
+.gift {
+  position: relative;
+  min-height: 100vh;
+  position: relative;
+  margin-top: calc(var(--nav-height) + 3rem);
+}
+
+.gift .starbuck {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--clr-brand);
+  color: white;
+}
+
+.gift-list .header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.singleGift {
+  max-width: 400px;
+  background-color: red;
+}
+
+.gift-list .header span {
+  font-size: 0.9rem;
+  color: var(--clr-brand);
+  font-weight: bold;
+  margin-bottom: 1.4em;
+}
+
+.gift-list .title {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.gift .gift-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.gift-list .gift-display {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
