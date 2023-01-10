@@ -20,7 +20,7 @@ function App() {
           <Route path="menu2" element={<Menu />} />
           <Route path="reward" element={<Reward />} />
           <Route path="giftcard" element={<Gift />} />
-          <Route path="findstore" element={<FindStore />} />
+          <Route path="/err" element={<FindStore />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/join" element={<Join />} />
           <Route path="*" element={<NotFound />} />
